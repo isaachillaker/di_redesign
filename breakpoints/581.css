@@ -1,0 +1,63 @@
+/*************** 
+581px BREAKPOINT
+***************/
+
+@media only screen and (min-width: 581px) {
+
+    /* Universal Styles */
+
+    body {
+        a {}
+    }
+
+
+
+    /* General Layout */
+
+    .page-center {}
+
+    /* Steps Header */
+
+    .header-steps_wrap {}
+
+    .header-steps_nav_wrap {}
+
+    .header-steps_nav {}
+
+    .header-steps_list_wrap {
+        gap: 2em 1em;
+    }
+
+    .header-steps_li {
+
+        &:not(
+        .step_prev, 
+        .step_next, 
+        .step_is-active
+        ) {
+            display: flex;
+        }
+
+        &.step_is-active {
+
+            .header-steps_li_number {}
+        }
+
+    }
+
+    .header-steps_li_number {}
+
+    .header-steps_li_link {}
+
+
+    /* Remove Default List Styles */
+    .no-list {}
+
+    .header-steps_btn_wrap {
+        justify-content: space-between;
+        padding: 0 1.6em;
+    }
+
+    .header-steps_btn {}
+
+}

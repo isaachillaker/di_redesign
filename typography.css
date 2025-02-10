@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+/* Variables */
+
+:root {
+    /* COLORS */
+    --blue: #1e00a0;
+    --white: #ffffff;
+    --red: #d33e0c;
+    --dark-purple: #813dd6;
+    --green: #008600;
+    --light-purple: c67be2;
+    --off-white: #f7f5f4;
+    --orange: #f68b1f;
+    --text: #253c56;
+
+    /* Font Sizing */
+    font-size: 100%;
+
+    /* Font Families */
+    --heading-font: "Montserrat", serif;
+    --body-font: "Open Sans", serif;
+    --font-awesome: "Font Awesome 6 Free";
+
+    /* Hover & Animation Effects */
+    --link-underline: 0px 2px var(--white);
+    --link-hover: 0px 2px var(--white);
+
+}
+
+/* Typography */
+
+body {
+    font-family: var(--body-font);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+.subhead {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1, .h1 {}
+
+h2, .h2 {}
+
+h3, .h3 {}
+
+h4, .h4, .subhead {
+    font-size: 1.125em;
+    font-weight: 600;
+}
