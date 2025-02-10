@@ -1,6 +1,7 @@
 /* Universal Styles */
 
 body {
+    background-color: var(--off-white);
     margin: 0;
     
     a {
@@ -16,12 +17,19 @@ body {
     width: 90%;
 }
 
+.main-content {
+    & > * {
+        margin-bottom: 3em;
+    }
+}
+
 /* Steps Header */
 
 .header-steps_wrap {
     align-items: center;
     background-color: var(--dark-purple);
     display: flex;
+    margin-bottom: 3em;
     min-height: 150px;
     padding: 3em 0;
 }
@@ -31,7 +39,7 @@ body {
 .header-steps_nav {
     display: flex;
     flex-direction: column;
-    gap: 3.75em;
+    gap: 2.5em;
 }
 
 .header-steps_list_wrap {
@@ -104,6 +112,122 @@ body {
     justify-content: space-around;
 }
 
-.header-steps_btn {
+.header-steps_btn {}
 
+/* Main Content Area */
+
+.content_description_wrap {}
+
+.content_editing_wrap {}
+
+.content_editing_instruct {}
+
+.editing_subhead {}
+
+.editing_main-headline {
+    border-bottom: var(--heading-underline);
+    width: max-content;
+}
+
+.editing_p_content {}
+
+.content_editing_controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    .btn_inactive {
+        background: transparent;
+        border-color: var(--text);
+        color: var(--text);
+
+        &:hover {
+            background-color: var(--orange);
+            border-color: var(--orange);
+        }
+    }
+
+    .btn_active {
+
+        &:hover {
+            background-color: var(--orange);
+            border-color: var(--orange);
+        }
+    }
+}
+
+.content_bio-card-list_wrap {}
+
+.bio-card_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em var(--bio-card-row-gap);
+}
+
+.bio-card_li {
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 100%;
+}
+
+.bio-card_header_wrap {
+    background-color: var(--text);
+    border-radius: 20px 20px 0 0;
+    padding: 1.5em 2em;
+
+    h3, h4 {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: var(--white);
+    }
+
+    h4 {
+        color: var(--orange)
+    }
+}
+
+.bio-card_content_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+}
+
+.bio-card_info_wrap {}
+
+.bio-card_info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.bio-card_info-list_li {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-list_li_label {}
+
+.info-list_li_value {}
+
+.bio-card_button_wrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+}
+
+/* Footer */
+
+.footer {}
+
+.footer_content_wrap {}
+
+.footer-steps_btn_wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
 }

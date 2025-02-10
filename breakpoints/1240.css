@@ -53,4 +53,61 @@
 
     .header-steps_btn {}
 
+    /* Main Content Area */
+
+    .content_description_wrap {}
+
+    .content_editing_wrap {}
+
+    .content_editing_instruct {}
+
+    .editing_subhead {}
+
+    .editing_main-headline {}
+
+    .editing_p_content {}
+
+    .content_editing_controls {
+
+        .btn_inactive {
+
+            &:hover {}
+        }
+
+        .btn_active {
+
+            &:hover {}
+        }
+    }
+
+    .content_bio-card-list_wrap {}
+
+    .bio-card_list {}
+
+    .bio-card_li {
+        width: calc(25% - ((var(--bio-card-row-gap) * 3) / 4));
+    }
+
+    .bio-card_header_wrap {
+
+        h3, h4 {}
+
+        h3 {}
+
+        h4 {}
+    }
+
+    .bio-card_content_wrap {}
+
+    .bio-card_info_wrap {}
+
+    .bio-card_info-list {}
+
+    .bio-card_info-list_li {}
+
+    .info-list_li_label {}
+
+    .info-list_li_value {}
+
+    .bio-card_button_wrap {}
 }

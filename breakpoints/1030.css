@@ -18,13 +18,17 @@
 
     /* Steps Header */
 
-    .header-steps_wrap {}
+    .header-steps_wrap {
+        padding: 4em 0 3em 0;
+    }
 
     .header-steps_nav_wrap {}
 
     .header-steps_nav {}
 
-    .header-steps_list_wrap {}
+    .header-steps_list_wrap {
+        justify-content: space-between;
+    }
 
     .header-steps_li {
 
@@ -52,5 +56,63 @@
     .header-steps_btn_wrap {}
 
     .header-steps_btn {}
+
+    /* Main Content Area */
+
+    .content_description_wrap {}
+
+    .content_editing_wrap {}
+
+    .content_editing_instruct {}
+
+    .editing_subhead {}
+
+    .editing_main-headline {}
+
+    .editing_p_content {}
+
+    .content_editing_controls {
+
+        .btn_inactive {
+
+            &:hover {}
+        }
+
+        .btn_active {
+
+            &:hover {}
+        }
+    }
+
+    .content_bio-card-list_wrap {}
+
+    .bio-card_list {}
+
+    .bio-card_li {
+        width: calc(33.33333333333333% - ((var(--bio-card-row-gap) * 2) / 3));
+    }
+
+    .bio-card_header_wrap {
+
+        h3, h4 {}
+
+        h3 {}
+
+        h4 {}
+    }
+
+    .bio-card_content_wrap {}
+
+    .bio-card_info_wrap {}
+
+    .bio-card_info-list {}
+
+    .bio-card_info-list_li {}
+
+    .info-list_li_label {}
+
+    .info-list_li_value {}
+
+    .bio-card_button_wrap {}
 
 }

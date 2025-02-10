@@ -22,9 +22,14 @@
     --body-font: "Open Sans", serif;
     --font-awesome: "Font Awesome 6 Free";
 
-    /* Hover & Animation Effects */
+    /* Spacing */
+    --bio-card-row-gap: 1.5em;
+
+    /* Additional Effects */
     --link-underline: 0px 2px var(--white);
-    --link-hover: 0px 2px var(--white);
+    --link-underline-dark: 0px 2px var(--text);
+    --link-underline-red: 0px 2px var(--red);
+    --heading-underline: 3px solid var(--orange);
 
 }
 
@@ -32,6 +37,14 @@
 
 body {
     font-family: var(--body-font);
+
+    p {
+        color: var(--text);
+
+        &:last-child {
+            margin-bottom: 1.5em;
+        }
+    }
 }
 
 h1, .h1,
@@ -39,7 +52,10 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 .subhead {
+    color: var(--text);
     font-weight: 700;
+    line-height: 1.5;
+    margin-top: 0;
     text-transform: uppercase;
 }
 
@@ -50,6 +66,12 @@ h2, .h2 {}
 h3, .h3 {}
 
 h4, .h4, .subhead {
+    font-weight: 600;
+}
+
+.label {
+    color: var(--text);
     font-size: 1.125em;
     font-weight: 600;
+    text-transform: capitalize;
 }

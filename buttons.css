@@ -1,17 +1,44 @@
 /* Primary Button */
 .btn, .btn-primary {
+    background-color: var(--green);
+    border: 3px solid var(--green);
+    border-radius: 20px;
     color: var(--white);
+    display: inline-block;
     font-size: 1.125em;
-    font-weight: 600;
+    font-weight: 700;
+    min-width: 180px;
+    padding: 0.5em 1em;
     position: relative;
-    /* background-color: var(--green); */
+    text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.235s;
+
+    &:hover {
+        background-color: transparent;
+        border-color: var(--text);
+        color: var(--text);
+    }
+
+    &::before,
+    &::after {
+        font-family: var(--font-awesome);
+        font-weight: 900;
+        position: absolute;
+        transition: 0.235s;
+        z-index: 1;
+    }
 }
 
 /* Secondary Button */
+.btn-secondary {
+    background-color: var(--dark-purple);
+    border-color: var(--dark-purple);
+}
 
 /* Tertiary Button */
-.btn_tertiary {
+.btn-tertiary {
 
     /* ::after {
         content: '\f061';
@@ -20,30 +47,92 @@
     } */
 }
 
+/* Edit Button */
+.btn-edit {
+    min-width: 45px;
+    padding-left: 1.5em;
+    padding-right: 2.25em;
+
+    &:hover {
+        background-color: var(--orange);
+        border-color: var(--orange);
+        color: var(--text);
+    }
+
+    &::after {
+        content: '\f303';
+        font-size: 0.8em;
+        top: 31%;
+        right: 0.9em;
+    }
+}
+
 /* Delete Button */
+.btn-delete {
+    color: var(--red);
+    font-size: 1.125em;
+    position: relative;
+    text-decoration: none;
+    transition: 0.235s;
+
+    &:hover {
+        box-shadow: var(--link-underline-red);
+    }
+
+    &::after {
+        content: '\f2ed';
+        font-family: var(--font-awesome);
+        font-size: 0.8em;
+        font-weight: 900;
+        position: absolute;
+        transition: 0.235s;
+        top: 23%;
+        right: -1.5em;
+        z-index: 1;
+    }
+}
 
 
 /* Prev/Next Step Button */
 .btn_prev,
 .btn_next {
     background: transparent;
+    border: none;
+    border-radius: 0;
+    font-weight: 600;
+    min-width: auto;
     padding: 5px 0;
     transition: 0.235s;
+    text-transform: capitalize;
+
+    &.btn-dark {
+        color: var(--text);
+
+        &:hover {
+            box-shadow: var(--link-underline-dark);
+            color: var(--text);
+        }
+    }
 
     &::before,
     &::after {
-        font-family: var(--font-awesome);
-        font-weight: 900;
-        position: absolute;
         top: 24%;
-        transition: 0.235s;
-        z-index: 1;
     }
 
     &:hover {
         box-shadow: var(--link-underline);
+        color: var(--white);
     }
     
+}
+
+.btn_prev-dark,
+.btn_next-dark {
+    color: var(--text);
+
+    &:hover {
+
+    }
 }
 
 .btn_prev {
