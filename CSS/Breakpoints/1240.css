@@ -1,8 +1,8 @@
-/*************** 
-1030px BREAKPOINT
-***************/
+/**************** 
+1240px BREAKPOINT
+****************/
 
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 1240px) {
 
     /* Universal Styles */
 
@@ -18,17 +18,13 @@
 
     /* Steps Header */
 
-    .header-steps_wrap {
-        padding: 4em 0 3em 0;
-    }
+    .header-steps_wrap {}
 
     .header-steps_nav_wrap {}
 
     .header-steps_nav {}
 
-    .header-steps_list_wrap {
-        justify-content: space-between;
-    }
+    .header-steps_list_wrap {}
 
     .header-steps_li {
 
@@ -89,7 +85,7 @@
     .bio-card_list {}
 
     .bio-card_li {
-        width: calc(33.33333333333333% - ((var(--bio-card-row-gap) * 2) / 3));
+        width: calc(25% - ((var(--bio-card-row-gap) * 3) / 4));
     }
 
     .bio-card_header_wrap {
@@ -114,5 +110,35 @@
     .info-list_li_value {}
 
     .bio-card_button_wrap {}
+
+    .card_btn_add-new {
+    
+        &:hover {
+    
+            .btn_add-new_headline {}
+        }
+    }
+    
+    .btn_add-new_link {
+    
+        &:hover {}
+    }
+    
+    .btn_add-new_content_wrap {}
+    
+    .btn_add-new_plus-symbol {
+    
+        .fa-solid .fa-plus {}
+    }
+    
+    .btn_add-new_headline {}
+
+    /* Footer */
+
+    .footer {}
+
+    .footer_content_wrap {}
+
+    .footer-steps_btn_wrap {}
 
 }

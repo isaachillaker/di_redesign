@@ -4,6 +4,7 @@
     border: 3px solid var(--green);
     border-radius: 20px;
     color: var(--white);
+    cursor: pointer;
     display: inline-block;
     font-size: 1.125em;
     font-weight: 700;
@@ -27,6 +28,8 @@
         font-weight: 900;
         position: absolute;
         transition: 0.235s;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 1;
     }
 }
@@ -39,12 +42,21 @@
 
 /* Tertiary Button */
 .btn-tertiary {
+    background-color: transparent;
+    border-color: var(--text);
+    color: var(--text);
+    padding-right: 2.25em;
 
-    /* ::after {
+    &:hover {
+        background-color: var(--gray);
+        border-color: var(--gray);
+    }
+
+    &:after {
         content: '\f061';
         font-family: var(--font-awesome);
         position: absolute;
-    } */
+    }
 }
 
 /* Edit Button */
@@ -62,7 +74,28 @@
     &::after {
         content: '\f303';
         font-size: 0.8em;
-        top: 31%;
+        right: 0.9em;
+    }
+}
+
+/* Save Canges Button */
+.btn-save {
+    padding-right: 2.7em;
+
+    &:after {
+        content: '\f00c';
+        right: 0.9em;
+    }
+}
+
+/* Cancel Button */
+.btn-cancel {
+    padding-left: 0.5em;
+    padding-right: 2em;
+
+    &:after {
+        content: '\58';
+        font-size: 1em;
         right: 0.9em;
     }
 }
@@ -85,8 +118,9 @@
         font-size: 0.8em;
         font-weight: 900;
         position: absolute;
+        transform: translateY(-50%);
         transition: 0.235s;
-        top: 23%;
+        top: 50%;
         right: -1.5em;
         z-index: 1;
     }
@@ -115,9 +149,7 @@
     }
 
     &::before,
-    &::after {
-        top: 24%;
-    }
+    &::after {}
 
     &:hover {
         box-shadow: var(--link-underline);

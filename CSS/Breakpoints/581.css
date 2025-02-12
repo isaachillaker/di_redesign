@@ -1,8 +1,8 @@
 /*************** 
-768px BREAKPOINT
+581px BREAKPOINT
 ***************/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 581px) {
 
     /* Universal Styles */
 
@@ -14,9 +14,7 @@
 
     /* General Layout */
 
-    .page-center {
-        width: 94%;
-    }
+    .page-center {}
 
     /* Steps Header */
 
@@ -26,7 +24,9 @@
 
     .header-steps_nav {}
 
-    .header-steps_list_wrap {}
+    .header-steps_list_wrap {
+        gap: 2em 1em;
+    }
 
     .header-steps_li {
 
@@ -34,7 +34,9 @@
         .step_prev, 
         .step_next, 
         .step_is-active
-        ) {}
+        ) {
+            display: flex;
+        }
 
         &.step_is-active {
 
@@ -51,7 +53,10 @@
     /* Remove Default List Styles */
     .no-list {}
 
-    .header-steps_btn_wrap {}
+    .header-steps_btn_wrap {
+        justify-content: space-between;
+        padding: 0 1.6em;
+    }
 
     .header-steps_btn {}
 
@@ -86,9 +91,7 @@
 
     .bio-card_list {}
 
-    .bio-card_li {
-        width: calc(50% - (var(--bio-card-row-gap) / 2));
-    }
+    .bio-card_li {}
 
     .bio-card_header_wrap {
 
@@ -112,5 +115,38 @@
     .info-list_li_value {}
 
     .bio-card_button_wrap {}
+
+    .card_btn_add-new {
+    
+        &:hover {
+    
+            .btn_add-new_headline {}
+        }
+    }
+    
+    .btn_add-new_link {
+    
+        &:hover {}
+    }
+    
+    .btn_add-new_content_wrap {}
+    
+    .btn_add-new_plus-symbol {
+    
+        .fa-solid .fa-plus {}
+    }
+    
+    .btn_add-new_headline {}
+
+    /* Footer */
+
+    .footer {}
+
+    .footer_content_wrap {}
+
+    .footer-steps_btn_wrap {
+        justify-content: space-between;
+        padding: 0 1.6em;
+    }
 
 }

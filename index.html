@@ -3,15 +3,17 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="typography.css">
-    <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="breakpoints/base.css">
-    <link rel="stylesheet" href="breakpoints/581.css">
-    <link rel="stylesheet" href="breakpoints/768.css">
-    <link rel="stylesheet" href="breakpoints/1030.css">
-    <link rel="stylesheet" href="breakpoints/1240.css">
+    <!-- Load Stylesheets -->
+    <link rel="stylesheet" href="CSS/Partials/typography.css">
+    <link rel="stylesheet" href="CSS/Modules/buttons.css">
+    <link rel="stylesheet" href="CSS/Modules/forms.css">
+    <link rel="stylesheet" href="CSS/Breakpoints/base.css">
+    <link rel="stylesheet" href="CSS/Breakpoints/581.css">
+    <link rel="stylesheet" href="CSS/Breakpoints/768.css">
+    <link rel="stylesheet" href="CSS/Breakpoints/1030.css">
+    <link rel="stylesheet" href="CSS/Breakpoints/1240.css">
+    <!-- Load Font Awesome Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <title>Register Your Team - DI</title>
@@ -136,19 +138,199 @@
             </ul>
 
             <!-- Header Button Container -->
-             <div class="header-steps_btn_wrap">
+            <div class="header-steps_btn_wrap">
 
                 <a class="header-steps_btn btn btn_prev" href="#">Prev Step</a>
 
                 <a class="header-steps_btn btn btn_next" href="#">Next Step</a>
 
-             </div>
+            </div>
 
         </nav>
     </header>
 
     <!-- Main Content -->
-     <main id="main-content" class="main-content page-center">
+    <main id="main-content" class="main-content page-center">
+
+        <!-- BG Overlay -->
+        <div class="bg-overlay_full-screen"></div>
+
+        <!-- Form Pop-up -->
+        <div class="form_popup_wrap">
+
+            <div class="form-popup_header_wrap">
+
+                <span class="h4">Editing Participant</span>
+
+                <span class="h3">Alice Applebaum</span>
+
+            </div>
+
+            <div class="form_popup_content_wrap">
+
+                <form action="#" method="post">
+                
+                    <div class="form-input_wrap">
+
+                        <label for="first-name">First Name</label>
+
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+                    
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label for="last-name">Last Name</label>
+
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+                    
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label for="pronouns">Pronouns</label>
+
+                        <input type="text" id="pronouns" name="pronouns" placeholder="e.g., they/them">
+                    
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label for="teams">Teams</label>
+                        
+                        <input type="number" id="teams" name="teams" placeholder="Enter number of teams">
+                    
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label>First Year Of DI?</label>
+
+                        <div>
+
+                            <input type="radio" id="first-year-yes" name="first-year" value="Yes">
+
+                            <label for="first-year-yes">Yes</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="radio" id="first-year-no" name="first-year" value="No">
+
+                            <label for="first-year-no">No</label>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label>First GF?</label>
+
+                        <div>
+
+                            <input type="radio" id="first-gf-yes" name="first-gf" value="Yes">
+
+                            <label for="first-gf-yes">Yes</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="radio" id="first-gf-no" name="first-gf" value="No">
+
+                            <label for="first-gf-no">No</label>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label>DI Alum?</label>
+
+                            <div>
+
+                                <input type="radio" id="di-alum-yes" name="di-alum" value="Yes">
+
+                                <label for="di-alum-yes">Yes</label>
+
+                            </div>
+
+                            <div>
+
+                                <input type="radio" id="di-alum-no" name="di-alum" value="No">
+
+                                <label for="di-alum-no">No</label>
+
+                            </div>
+
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label>Taken 23/24 TM Certification Courses?</label>
+
+                        <div>
+
+                            <input type="radio" id="cert-course-yes" name="cert-course" value="Yes">
+
+                            <label for="cert-course-yes">Yes</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="radio" id="cert-course-no" name="cert-course" value="No">
+
+                            <label for="cert-course-no">No</label>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="form-input_wrap">
+
+                        <label>Participating?</label>
+
+                        <div>
+
+                            <input type="radio" id="participating-yes" name="participating" value="Yes">
+
+                            <label for="participating-yes">Yes</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="radio" id="participating-no" name="participating" value="No">
+
+                            <label for="participating-no">No</label>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="form-input_wrap submit-btn_wrap">
+                        
+                        <button type="submit" class="btn btn-save" onclick="closeForm()">Save Changes</button>
+                    
+                    </div>
+
+                </form>
+
+                <div class="form-popup_button_wrap">
+
+                    <a class="btn btn-tertiary btn-cancel" onclick="closeForm()" href="#">Cancel Changes</a>
+
+                    <a class="btn-delete" href="#">Delete</a>
+
+                </div>
+
+            </div>
+
+        </div>
 
         <!-- Page Description -->
         <div class="content_description_wrap">
@@ -185,7 +367,7 @@
         </div>
 
         <!-- Attendee Cards -->
-         <div class="content_bio-card-list_wrap">
+        <div class="content_bio-card-list_wrap">
 
             <ul class="bio-card_list no-list">
 
@@ -263,7 +445,7 @@
                         <!-- Card Buttons -->
                         <div class="bio-card_button_wrap">
 
-                            <a class="btn btn-secondary btn-edit btn-edit" href="#">Edit</a>
+                            <a class="btn btn-secondary btn-edit btn-edit" onclick="openForm()" href="#">Edit</a>
 
                             <a class="btn-delete" href="#">Delete</a>
 
@@ -348,7 +530,7 @@
                         <!-- Card Buttons -->
                         <div class="bio-card_button_wrap">
 
-                            <a class="btn btn-secondary btn-edit" href="#">Edit</a>
+                            <a class="btn btn-secondary btn-edit" onclick="openForm()" href="#">Edit</a>
 
                             <a class="btn-delete" href="#">Delete</a>
 
@@ -433,7 +615,7 @@
                         <!-- Card Buttons -->
                         <div class="bio-card_button_wrap">
 
-                            <a class="btn btn-secondary btn-edit" href="#">Edit</a>
+                            <a class="btn btn-secondary btn-edit" onclick="openForm()" href="#">Edit</a>
 
                             <a class="btn-delete" href="#">Delete</a>
 
@@ -518,7 +700,7 @@
                         <!-- Card Buttons -->
                         <div class="bio-card_button_wrap">
 
-                            <a class="btn btn-secondary btn-edit" href="#">Edit</a>
+                            <a class="btn btn-secondary btn-edit" onclick="openForm()" href="#">Edit</a>
 
                             <a class="btn-delete" href="#">Delete</a>
 
@@ -603,7 +785,7 @@
                         <!-- Card Buttons -->
                         <div class="bio-card_button_wrap">
 
-                            <a class="btn btn-secondary btn-edit" href="#">Edit</a>
+                            <a class="btn btn-secondary btn-edit" onclick="openForm()" href="#">Edit</a>
 
                             <a class="btn-delete" href="#">Delete</a>
 
@@ -611,17 +793,39 @@
 
                     </div>
 
+
+                </li>
+
+                <!-- Add New Card -->
+                <li class="bio-card_li card_btn_add-new">
+
+                    <a class="btn_add-new_link" href="#">
+
+                        <div class="btn_add-new_content_wrap">
+
+                            <div class="btn_add-new_plus-symbol">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </div>
+
+                            <!-- "Add New" Link -->
+                            <div class="btn_add-new_headline subhead" href="#">Add New</div>
+
+                        </div>
+
+                    </a>
 
                 </li>
 
             </ul>
 
-         </div>
+        </div>
 
-     </main>
+    </main>
 
-     <!-- Footer -->
-      <footer id="footer" class="footer">
+    <!-- Footer -->
+    <footer id="footer" class="footer">
 
         <div class="footer_content_wrap page-center">
 
@@ -636,6 +840,11 @@
 
         </div>
 
-      </footer>
+    </footer>
+
+    <!-- External JS Files -->
+    <script src="JS/forms.js"></script>
+    
 </body>
+
 </html>

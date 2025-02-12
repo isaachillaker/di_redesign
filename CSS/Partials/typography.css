@@ -6,6 +6,8 @@
     /* COLORS */
     --blue: #1e00a0;
     --white: #ffffff;
+    --gray: #C5C8CA;
+    --dark-gray: #9CA0A2;
     --red: #d33e0c;
     --dark-purple: #813dd6;
     --green: #008600;
@@ -30,6 +32,7 @@
     --link-underline-dark: 0px 2px var(--text);
     --link-underline-red: 0px 2px var(--red);
     --heading-underline: 3px solid var(--orange);
+    --transition: all 0.235s ease-in-out;
 
 }
 
@@ -69,9 +72,10 @@ h4, .h4, .subhead {
     font-weight: 600;
 }
 
-.label {
+label {
     color: var(--text);
     font-size: 1.125em;
     font-weight: 600;
+    margin-bottom: 0.5em;
     text-transform: capitalize;
 }
