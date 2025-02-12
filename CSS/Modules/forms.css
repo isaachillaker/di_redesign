@@ -67,7 +67,7 @@ progress {
     border-radius: 20px;
     display: none;
     flex-direction: column;
-    height: 75vh;
+    height: 85vh;
     margin-inline: auto;
     max-height: 625px;
     position: fixed;

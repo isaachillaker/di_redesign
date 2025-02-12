@@ -201,6 +201,9 @@ body {
 }
 
 .bio-card_content_wrap {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 3px 8px 10px var(--gray);
     display: flex;
     flex-direction: column;
     gap: 2em;
